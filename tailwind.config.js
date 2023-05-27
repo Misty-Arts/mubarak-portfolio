@@ -28,6 +28,16 @@ module.exports = {
           fontWeight: "bold",
         }],
       },
+      colors: {
+        grey: "#616163",
+        blue: "#2EB1ED",
+      },
+      maxWidth: {
+        "655px": "655px",
+      },
+      spacing: {
+        30: "120px",
+      },
     },
   },
   plugins: [],
