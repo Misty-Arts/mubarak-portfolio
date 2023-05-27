@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-container {
+  @apply container max-w-screen-xl mx-auto px-4 md:px-6;
+}
+
+.custom-container-no-p {
+  @apply container max-w-screen-2xl mx-auto;
+}
