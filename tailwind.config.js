@@ -15,15 +15,18 @@ module.exports = {
         lg: "1200px",
         xl: "1440px",
       },
-      colors: {
-        bg: "#EFF0F4"
-      },
       maxWidth: {
         "500px": "500px",
+        "655px": "655px",
       },
       fontSize: {
         "64px": ["64px", {
-          lineHeight: "70px",
+          lineHeight: "63px",
+          letterSpacing: "0.01em",
+          fontWeight: "bold",
+        }],
+        "32px": ["32px", {
+          lineHeight: "57px",
           letterSpacing: "0.01em",
           fontWeight: "bold",
         }],
@@ -31,9 +34,10 @@ module.exports = {
       colors: {
         grey: "#616163",
         blue: "#2EB1ED",
-      },
-      maxWidth: {
-        "655px": "655px",
+        bg: "#EFF0F4",
+        orange: "#EC9412",
+        wine: "#CC3A3B",
+        green: "#1FC586"
       },
       spacing: {
         30: "120px",
