@@ -1,7 +1,9 @@
-export default function Home() {
+import Home from "@/components/LandingPage/Home";
+
+export default function HomePage() {
   return (
-    <main className="">
-      <p className="text-center text-red-600">Hello</p>
-    </main>
+    <>
+      <Home />
+    </>
   );
 }

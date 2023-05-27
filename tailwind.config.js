@@ -15,6 +15,19 @@ module.exports = {
         lg: "1200px",
         xl: "1440px",
       },
+      colors: {
+        bg: "#EFF0F4"
+      },
+      maxWidth: {
+        "500px": "500px",
+      },
+      fontSize: {
+        "64px": ["64px", {
+          lineHeight: "70px",
+          letterSpacing: "0.01em",
+          fontWeight: "bold",
+        }],
+      },
     },
   },
   plugins: [],

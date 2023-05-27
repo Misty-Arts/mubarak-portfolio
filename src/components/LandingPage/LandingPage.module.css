@@ -1,0 +1,27 @@
+.single_animation_path {
+  animation: single_animation 1s linear;
+}
+
+.single_animation_icon {
+  animation: single_animation_icon 1s linear;
+}
+
+@keyframes single_animation {
+  0% {
+    d: path("M2 12C24.3105 4.28555 50.9541 1.57881 75.7052 2.0521C96.9619 2.45857 118.58 4.91253 139 9.08368");
+  }
+  100% {
+    d: path("M2 12C47.2725 4.28555 101.337 1.57881 151.562 2.0521C194.696 2.45857 238.564 4.91253 280 9.08368");
+  }
+}
+
+@keyframes single_animation_icon {
+  0% {
+    width: 141px;
+    viewBox: 0 0 141 14;
+  }
+  100% {
+    width: 282px;
+    viewBox: 0 0 282 14;
+  }
+}
