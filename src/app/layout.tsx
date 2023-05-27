@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import { montserrat, raleway } from "@/lib/font";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${raleway.variable} ${montserrat.variable} font-montserrat`}>
+        <Navbar />
         <div className="bg-red-300">{children}</div>
       </body>
     </html>
