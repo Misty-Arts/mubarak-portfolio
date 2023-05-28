@@ -1,11 +1,11 @@
+import Heading from "@/components/common/Heading";
 import { FC } from "react";
 
 const About: FC = () => {
   return (
-    <section id="about" className="custom-container">
-      <div className="text-center">
-        <p className="font-semibold text-blue">Main Info</p>
-        <h1 className="font-raleway font-semibold text-40px">ABOUT ME</h1>
+    <section id="about" className="py-10">
+      <div className="custom-container">
+        <Heading title="About Me" subtitle="Main Info" />
       </div>
     </section>
   );

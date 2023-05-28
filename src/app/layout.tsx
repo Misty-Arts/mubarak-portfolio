@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${raleway.variable} bg-bg ${montserrat.variable} font-montserrat`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="pt-10 md:pt-30">{children}</main>
       </body>
     </html>
   );

@@ -161,3 +161,10 @@
     text-indent: 0;
   }
 }
+
+.arrow:hover > .arrow_right  {
+  @apply block;
+}
+.arrow:hover > .arrow_top_right {
+  @apply hidden;
+}

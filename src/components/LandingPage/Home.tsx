@@ -9,7 +9,7 @@ import styles from "./LandingPage.module.css";
 
 const Home: FC = () => {
   return (
-    <section id="home" className="py-10">
+    <section id="home" className="py-20 md:py-10">
       <div className="custom-container">
         <div className="flex md:px-16 items-center">
           <div className="font-raleway md:w-1/2 scale-75 md:scale-100 origin-left">

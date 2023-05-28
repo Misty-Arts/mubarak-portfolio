@@ -1,8 +1,4 @@
-"use client";
-import CloseIcon from "@/lib/icons/Close";
-import MubaraqLogo from "@/lib/icons/Logo";
-import MenuIcon from "@/lib/icons/Menu";
-import { FC, useState } from "react";
+import { FC } from "react";
 import DesktopNav from "./Desktop";
 import MobileNav from "./Mobile";
 
@@ -34,28 +30,15 @@ export const navItems = [
 ];
 
 const Navbar: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="custom-container relative">
+    <>
       <div className="md:hidden">
-        <div className="flex justify-between items-center">
-          <MubaraqLogo />
-          {isOpen ? (
-            <button onClick={() => setIsOpen(false)}>
-              <CloseIcon />
-            </button>
-          ) : (
-            <button onClick={() => setIsOpen(true)}>
-              <MenuIcon />
-            </button>
-          )}
-        </div>
-        {isOpen && <MobileNav />}
+        <MobileNav />
       </div>
       <div className="hidden md:block">
         <DesktopNav />
       </div>
-    </nav>
+    </>
   );
 };
 
