@@ -20,16 +20,23 @@ module.exports = {
         "655px": "655px",
       },
       fontSize: {
-        "64px": ["64px", {
-          lineHeight: "63px",
-          letterSpacing: "0.01em",
-          fontWeight: "bold",
-        }],
-        "32px": ["32px", {
-          lineHeight: "57px",
-          letterSpacing: "0.01em",
-          fontWeight: "bold",
-        }],
+        "40px": ["40px", { lineHeight: "40px" }],
+        "64px": [
+          "64px",
+          {
+            lineHeight: "63px",
+            letterSpacing: "0.01em",
+            fontWeight: "bold",
+          },
+        ],
+        "32px": [
+          "32px",
+          {
+            lineHeight: "57px",
+            letterSpacing: "0.01em",
+            fontWeight: "bold",
+          },
+        ],
       },
       colors: {
         grey: "#616163",
@@ -37,7 +44,7 @@ module.exports = {
         bg: "#EFF0F4",
         orange: "#EC9412",
         wine: "#CC3A3B",
-        green: "#1FC586"
+        green: "#1FC586",
       },
       spacing: {
         30: "120px",

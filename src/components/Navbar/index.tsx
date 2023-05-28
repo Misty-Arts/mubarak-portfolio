@@ -36,7 +36,7 @@ export const navItems = [
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="custom-container">
+    <nav className="custom-container relative">
       <div className="md:hidden">
         <div className="flex justify-between items-center">
           <MubaraqLogo />
