@@ -3,15 +3,16 @@ import UxDesigner from "@/lib/icons/Hero/UxDesigner";
 import UxResearcher from "@/lib/icons/Hero/UxResearcher";
 import { HERO_IMAGE } from "@/lib/images/landing-page";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import styles from "./LandingPage.module.css";
 
 const Home: FC = () => {
   return (
-    <section id="home" className="py-20">
+    <section id="home" className="py-10">
       <div className="custom-container">
-        <div className="flex md:px-4 items-center">
-          <div className="font-raleway w-1/2">
+        <div className="flex md:px-16 items-center">
+          <div className="font-raleway md:w-1/2 scale-75 md:scale-100 origin-left">
             <p className="text-2xl leading-7 mb-2">Hello</p>
             <h1 className="text-64px flex gap-4">
               {"I’m"}
@@ -44,7 +45,7 @@ const Home: FC = () => {
               </div>
             </h1>
 
-            <h2 className="mt-2 text-32px relative overflow-hidden whitespace-nowrap">
+            <h2 className="mt-2 mb-14 text-32px relative overflow-hidden whitespace-nowrap">
               <span>I am a</span>
               <div className={styles.single_animation_words}>
                 <div className="mb-4">
@@ -67,8 +68,10 @@ const Home: FC = () => {
                 </div>
               </div>
             </h2>
+
+            <Link href="#contact" className="btn text-blue font-semibold text-base leading-7">Work with me</Link>
           </div>
-          <div className="w-1/2 max-w-500px ml-auto">
+          <div className="hidden md:block md:w-1/2 max-w-500px ml-auto">
             <Image {...HERO_IMAGE} alt="Image of Mubaraq Somuyiwa" />
           </div>
         </div>
