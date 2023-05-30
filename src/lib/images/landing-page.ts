@@ -9,3 +9,8 @@ export const ABOUT_IMAGE = {
   height: 1261,
   width: 1368,
 };
+export const TESTIMONIAL_1 = {
+  src: "/victor_vines.png",
+  height: 181,
+  width: 181,
+};

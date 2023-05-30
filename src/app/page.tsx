@@ -1,6 +1,7 @@
 import About from "@/components/LandingPage/About";
 import Home from "@/components/LandingPage/Home";
 import Portfolio from "@/components/LandingPage/Portfolio";
+import Testimonial from "@/components/LandingPage/Testimonial";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Home />
       <Portfolio />
       <About />
+      <Testimonial />
     </>
   );
 }
