@@ -19,7 +19,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div className={`max-w-682px p-6 my-12 mx-auto ${styles.testimonial_card}`}>
-      <div className="flex justify-between items-center mb-6">
+      <div className="md:flex justify-between items-center mb-6">
         <div className="w-15 h-15 mr-6 relative">
           <Image
             src={imageSrc}
@@ -29,8 +29,8 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
           />
         </div>
         <div className="text-left">
-          <p className="font-bold text-lg leading-22">{name}</p>
-          <p className="text-blue text-sm">{position}</p>
+          <p className="font-bold md:text-lg leading-22">{name}</p>
+          <p className="text-blue text-base md:text-sm">{position}</p>
         </div>
       </div>
       <LeftQuote />

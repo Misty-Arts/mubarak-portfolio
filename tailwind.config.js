@@ -16,6 +16,7 @@ module.exports = {
         xl: "1440px",
       },
       maxWidth: {
+        "389px": "389px",
         "412px": "412px",
         "414px": "414px",
         "450px": "450px",
@@ -25,6 +26,9 @@ module.exports = {
         "682px": "682px",
         "680px": "680px",
         "1010px": "1010px",
+      },
+      maxHeight: {
+        "172px": "172px",
       },
       fontSize: {
         "40px": ["40px", { lineHeight: "40px" }],
@@ -59,6 +63,7 @@ module.exports = {
         22: "22px",
         30: "120px",
         "28px": "28px",
+        "172px": "172px",
         "400px": "400px",
         "414px": "414px",
         "11.61%": "11.61%",
