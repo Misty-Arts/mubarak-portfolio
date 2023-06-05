@@ -14,7 +14,7 @@ const Contact: FC = () => {
   return (
     <section id="contact" className="custom-container">
       <Heading title="CONTACT" subtitle="Get in Touch" />
-      <div className="md:flex justify-between">
+      <div className="flex flex-wrap justify-between ">
         {contactDetails.map((item) => (
           <ContactCard
             icon={item.icon}
