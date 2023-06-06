@@ -48,7 +48,7 @@ const SliderDotsAndArrows: FC<ISliderDotsAndArrows> = ({
       </div>
 
       {loaded && instanceRef.current && (
-        <div className="flex w-full p-2 justify-center mt-4">
+        <div className="flex w-full p-2 justify-center mt-4 bg-grey">
           {[
             ...Array(
               instanceRef?.current?.track?.details?.slides?.length
@@ -60,10 +60,10 @@ const SliderDotsAndArrows: FC<ISliderDotsAndArrows> = ({
                 onClick={() => {
                   instanceRef.current?.moveToIdx(idx);
                 }}
-                className={`cursor-pointer z-40 hover:bg-${dotsColor}/60 h-7px mr-2 ${
+                className={`cursor-pointer z-40 hover:bg-blue h-7px mr-2 ${
                   currentSlide === idx
-                    ? `w-15px rounded-xl bg-${dotsColor}`
-                    : `w-7px rounded-full bg-${dotsColor}`
+                    ? `w-15px rounded-xl bg-blue`
+                    : `w-7px rounded-full bg-faint-grey`
                 }`}
               />
             );

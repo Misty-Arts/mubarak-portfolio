@@ -33,11 +33,15 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
           <p className="text-blue text-base md:text-sm">{position}</p>
         </div>
       </div>
-      <LeftQuote />
-      <p className="text-sm px-4 text-left">{testimony}</p>
-      <span className="flex justify-end">
-        <RightQuote />
-      </span>
+      <div className="relative my-4">
+        <span className="absolute -left-3 -top-3">
+          <LeftQuote />
+        </span>
+        <p className="text-sm px-4 text-left">{testimony}</p>
+        <span className="absolute -right-3 -bottom-3">
+          <RightQuote />
+        </span>
+      </div>
     </div>
   );
 };
