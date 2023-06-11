@@ -54,7 +54,7 @@ const LargeCard: FC<ILargeCard> = ({
   return (
     <div
       onClick={handleCardClick(topic)}
-      className={`p-2 max-w-528px text-ellipsis overflow-hidden transition-all duration-300 w-screen md:p-3 origin-center ${color} ${getZIndex(
+      className={`p-2 md:max-w-528px text-ellipsis overflow-hidden transition-all duration-300 md:w-screen md:p-3 origin-center ${color} ${getZIndex(
         index
       )} ${getPositionAndScale(index)} rounded-xl absolute`}
     >

@@ -43,7 +43,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
       </div>
       {!lastItem && (
         <div
-          className={`absolute ${
+          className={`absolute hidden md:block ${
             icon === "right" ? "-right-36" : "-left-36"
           } top-24 z-0`}
         >

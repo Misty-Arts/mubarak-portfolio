@@ -37,6 +37,9 @@ module.exports = {
       maxHeight: {
         "172px": "172px",
       },
+      minHeight: {
+        96: "24rem"
+      },
       fontSize: {
         "40px": ["40px", { lineHeight: "40px" }],
         "64px": [

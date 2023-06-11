@@ -25,7 +25,7 @@ const CertificationCard: FC<CertificationCardProps> = ({
   return (
     <div className="relative">
       <div
-        className={`p-4 md:p-6 relative z-10 bg-bg max-w-728px w-screen text-grey ${styles.skill_card}`}
+        className={`p-4 md:p-6 relative z-10 bg-bg max-w-728px w-full md:w-screen text-grey ${styles.skill_card}`}
       >
         <p className="font-medium text-xl leading-32px">{field}</p>
         <span className="md:flex">
@@ -44,7 +44,7 @@ const CertificationCard: FC<CertificationCardProps> = ({
       </div>
       {!lastItem && (
         <div
-          className={`absolute ${
+          className={`absolute hidden md:block ${
             icon === "right" ? "-right-36" : "-left-36"
           } top-24 z-0`}
         >

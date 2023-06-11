@@ -29,7 +29,7 @@ const CertificationTab: FC = () => {
   return (
     <div className="custom-container">
       {certificationItems.map(({ field, company, period, id, url }, index) => (
-        <div className={`mb-13.5 flex ${index % 2 && "flex justify-end"}`}>
+        <div className={`mb-13.5 flex ${index % 2 ? "flex justify-end" : ''}`}>
           <CertificationCard
             key={`${company}-${index}`}
             field={field}

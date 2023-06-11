@@ -14,8 +14,8 @@ const ContactForm: FC = () => {
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
       {(formik) => (
         <Form>
-          <div className="flex justify-between items-center gap-16">
-            <div className="w-1/2">
+          <div className="md:flex items-center gap-16">
+            <div className="w-full md:w-1/2">
               {fields.map(({ field, form, meta, name, ...others }) => (
                 <Field key={name} name={name}>
                   {(fieldProps: FieldProps<IContactValues>) => (
@@ -24,7 +24,7 @@ const ContactForm: FC = () => {
                 </Field>
               ))}
             </div>
-            <div className="w-1/2">
+            <div className="w-full mt-4 md:mt-0 md:w-1/2">
               <Field name="message">
                 {(fieldProps: any) => (
                   <textarea

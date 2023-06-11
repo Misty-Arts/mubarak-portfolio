@@ -20,7 +20,7 @@ const EducationTab: FC = () => {
   return (
     <div className="custom-container">
       {educationContents.map(({ discipline, school, period, task }, index) => (
-        <div className={`mb-13.5 flex ${index % 2 && "flex justify-end"}`}>
+        <div className={`mb-13.5 flex ${index % 2 ? "flex justify-end" : ""}`}>
           <EducationCard
             key={`${school}-${index}`}
             discipline={discipline}

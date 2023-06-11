@@ -7,7 +7,7 @@ const ExperienceTab: FC = () => {
     <section className="custom-container">
       {experienceItems.map((item, index) => (
         <div
-          className={`relative mb-6 md:mb-13.5 flex ${index % 2 && "flex justify-end"}`}
+          className={`relative mb-6 md:mb-13.5 flex ${index % 2 ? "flex justify-end" : ""}`}
         >
           <ExperienceCard
             key={`${item.company}-${index}`}
