@@ -27,6 +27,8 @@ const EducationTab: FC = () => {
             school={school}
             period={period}
             task={task}
+            icon={index % 2 ? "left" : "right"}
+            lastItem={index === educationContents.length - 1}
           />
         </div>
       ))}

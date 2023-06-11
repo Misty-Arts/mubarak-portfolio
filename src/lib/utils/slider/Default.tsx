@@ -5,14 +5,12 @@ import { AutoplayPlugin } from "./AutoplayPlugin";
 interface ISliderDotsAndArrows {
   sliders: ReactNode[];
   slidesPerView?: number | "auto";
-  dotsColor?: string;
   autoplay?: boolean;
 }
 
 const SliderDotsAndArrows: FC<ISliderDotsAndArrows> = ({
   sliders,
   slidesPerView = "auto",
-  dotsColor = "white",
   autoplay = false,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,7 +46,7 @@ const SliderDotsAndArrows: FC<ISliderDotsAndArrows> = ({
       </div>
 
       {loaded && instanceRef.current && (
-        <div className="flex w-full p-2 justify-center mt-4 bg-grey">
+        <div className="flex w-full p-2 justify-center mt-4">
           {[
             ...Array(
               instanceRef?.current?.track?.details?.slides?.length

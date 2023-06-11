@@ -37,6 +37,8 @@ const CertificationTab: FC = () => {
             period={period}
             id={id}
             url={url}
+            icon={index % 2 ? "left" : "right"}
+            lastItem={index === certificationItems.length - 1}
           />
         </div>
       ))}

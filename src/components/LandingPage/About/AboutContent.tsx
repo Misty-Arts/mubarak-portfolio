@@ -16,17 +16,15 @@ const socialIcons = [
 
 const AboutContent: FC = () => {
   return (
-    <div className="md:flex md:justify-between mt-12 md:px-16">
+    <div className="md:flex items-start gap-12 mt-12 md:px-16">
       <div className="w-full md:w-37.75%">
-        <div className="relative w-full max-w-450px h-80 md:h-414px md:mb-12">
+        <div className="relative w-full max-w-450px md:mb-8">
           <Image
-            src={ABOUT_IMAGE.src}
+            {...ABOUT_IMAGE}
             alt="Image of Mubaraq Somuyiwa"
-            fill
-            className="object-contain"
           />
         </div>
-        <div className="flex justify-between max-w-412px items-center mb-8 md:mb-0">
+        <div className="flex justify-center gap-8 max-w-412px items-center mb-8 md:mb-0">
           {socialIcons.map((item) => (
             <button key={item.href} className="btn">
               <Link href={item.href}> {item.icon}</Link>
@@ -35,7 +33,7 @@ const AboutContent: FC = () => {
         </div>
       </div>
       <div className="max-w-680px">
-        <div className="font-medium text-base leading-28px text-grey mb-6 md:mb-12">
+        <div className="font-normal text-base leading-28px text-justify text-grey mb-6 md:mb-12">
           <p className="mb-3">
             Hi, I'm Mubaraq Somuyiwa, but my friends call me Fortress. As a
             product designer, UX researcher, and UX writer with years of
