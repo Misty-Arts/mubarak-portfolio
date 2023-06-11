@@ -1,35 +1,49 @@
+"use client";
 import Heading from "@/components/common/Heading";
-import { FC } from "react";
+import { FC, useCallback, useState } from "react";
 import LargeCard from "./LargeCard";
 import SmallCard from "./SmallCard";
-import { largeCardItems, smallCardItems } from "./variables";
+import { largeCardItems } from "./variables";
 
 const Articles: FC = () => {
+  const [largeCards, setLargeCards] = useState(largeCardItems);
+
+  const handleCardClick = useCallback(
+    (topic: string) => () => {
+      const newCards = [...largeCards];
+      const card = newCards.find((item) => item.topic === topic);
+      const cardIndex = newCards.findIndex((item) => item.topic === topic);
+      newCards.splice(cardIndex, 1);
+      newCards.unshift(card!);
+      setLargeCards(newCards);
+    },
+    []
+  );
+
   return (
-    <section className="custom-container my-16 md:my-32">
+    <section id="articles" className="custom-container my-16 md:my-32">
       <Heading subtitle="Thought Provoking" title="ARTICLES" />
       <div className="flex justify-between mt-6 md:mt-12">
-        <div className="max-w-528px w-full">
-          {largeCardItems.map((item, index) => (
-            <LargeCard
-              key={`${item.topic}-${index}`}
-              topic={item.topic}
-              content={item.content}
-            />
+        <div className="max-w-528px w-screen mx-auto mt-36 relative">
+          {largeCards.map((item, index) => (
+            <LargeCard handleCardClick={handleCardClick} key={`${item.topic}-${index}`} {...item} index={index} />
           ))}
         </div>
 
         <div className="border-grey border-l-2 max-w-350px w-full px-2">
-          <p className="font-medium text-sm text-grey">
+          <p className="font-medium text-sm text-grey mb-4">
             Articles by Mubaraq Somuyiwa
           </p>
-          {smallCardItems.map((item, index) => (
+          {largeCardItems.map((item, index) => (
             <SmallCard
               key={`${item.topic}-${index}`}
               date={item.date}
               time={item.time}
               topic={item.topic}
+              color={item.color}
+              showColor={largeCards[0].color === item.color}
               keywords={item.keywords}
+              handleCardClick={handleCardClick}
             />
           ))}
         </div>

@@ -5,11 +5,14 @@ interface ISmallCard {
   time: string;
   topic: string;
   keywords: string[];
+  color: string;
+  showColor: boolean;
+  handleCardClick: (index: string) => () => void;
 }
 
-const SmallCard: FC<ISmallCard> = ({ date, time, topic, keywords }) => {
+const SmallCard: FC<ISmallCard> = ({ date, time, topic, keywords, color, showColor, handleCardClick }) => {
   return (
-    <div className="max-w-350px py-4">
+    <div onClick={handleCardClick(topic)} className={`px-2 max-w-350px py-4 ${showColor ? color : ""}`}>
       <span className="text-grey text-sm flex">
         <p>{date}&nbsp;&nbsp;</p> | <p>&nbsp;&nbsp;{time}</p>
       </span>

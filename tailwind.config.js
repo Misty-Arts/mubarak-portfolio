@@ -9,6 +9,9 @@ module.exports = {
       raleway: ["var(--font-raleway)", ...fontFamily.sans],
     },
     extend: {
+      scale: {
+        '85': "0.85"
+      },
       screens: {
         sm: "640px",
         md: "900px",
@@ -64,7 +67,7 @@ module.exports = {
         "article-blue": "#B8E4EF",
         "article-orange": "#FEEAB7",
         "article-yellow": "#F2FFB8",
-        "article-yellow-50": "#F2FFB8",
+        "article-yellow-50": "#F3EBD5",
       },
       spacing: {
         13.5: "58px",

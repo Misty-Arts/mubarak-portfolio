@@ -1,6 +1,5 @@
-import { ExperienceCardProps } from "./ExperienceCard";
 
-export const experienceItems: ExperienceCardProps[] = [
+export const experienceItems = [
   {
     role: "Product Designer",
     company: "Main Heart Ng",
