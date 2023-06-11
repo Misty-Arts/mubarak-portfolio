@@ -5,27 +5,27 @@ import MobileNav from "./Mobile";
 export const navItems = [
   {
     name: "Home",
-    href: "/#home",
+    href: "home",
   },
   {
     name: "Portfolio",
-    href: "/#portfolio",
+    href: "portfolio",
   },
   {
     name: "About",
-    href: "/#about",
+    href: "about",
   },
   {
     name: "Articles",
-    href: "/#articles",
+    href: "articles",
   },
   {
     name: "Testimonial",
-    href: "/#testimonial",
+    href: "testimonial",
   },
   {
     name: "Contact",
-    href: "/#contact",
+    href: "contact",
   },
 ];
 
