@@ -32,6 +32,7 @@ const MobileNav: FC = () => {
           <div className="mx-auto w-full my-6 text-center">
             {navItems.map((item) => (
               <Link
+              onClick={() => setIsOpen(false)}
                 key={item.href}
                 to={item.href}
                 offset={-88}
