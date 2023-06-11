@@ -19,7 +19,7 @@ const CertificationCard: FC<CertificationCardProps> = ({
 }) => {
   return (
     <div
-      className={`p-4 md:p-10 max-w-728px w-full text-grey ${styles.skill_card}`}
+      className={`p-4 md:p-6 max-w-728px w-full text-grey ${styles.skill_card}`}
     >
       <p className="font-medium text-xl leading-32px">{field}</p>
       <span className="md:flex">
@@ -28,7 +28,7 @@ const CertificationCard: FC<CertificationCardProps> = ({
         <p className="text-sm"> {period}</p>
       </span>
       <div className="px-4 mt-4">
-        <ul className="list-disc mb-1">
+        <ul className="list-disc leading-28px mb-1">
           <li>{id} </li>
         </ul>
         <ul className="list-disc underline">

@@ -3,6 +3,7 @@ import Mail from "@/lib/icons/Contact/Mail";
 import Phone from "@/lib/icons/Contact/Phone";
 import { FC } from "react";
 import ContactCard from "./Card";
+import ContactForm from "./Form";
 
 const contactDetails = [
   { icon: <Phone />, title: "Phone", content: "+2348106084709" },
@@ -12,7 +13,7 @@ const contactDetails = [
 
 const Contact: FC = () => {
   return (
-    <section id="contact" className="custom-container">
+    <section id="contact" className="custom-container my-16 md:my-32">
       <Heading title="CONTACT" subtitle="Get in Touch" />
       <div className="flex flex-wrap justify-between ">
         {contactDetails.map((item) => (
@@ -23,6 +24,7 @@ const Contact: FC = () => {
           />
         ))}
       </div>
+      <ContactForm />
     </section>
   );
 };
