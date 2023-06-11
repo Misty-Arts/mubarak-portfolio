@@ -18,7 +18,7 @@ const AboutContent: FC = () => {
   return (
     <div className="md:flex items-start gap-12 mt-12 md:px-16">
       <div className="w-full md:w-37.75%">
-        <div className="relative w-full max-w-450px md:mb-8">
+        <div className="relative w-full max-w-450px mb-4 md:mb-8">
           <Image
             {...ABOUT_IMAGE}
             alt="Image of Mubaraq Somuyiwa"
