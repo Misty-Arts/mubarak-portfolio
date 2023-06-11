@@ -1,4 +1,5 @@
 import About from "@/components/LandingPage/About";
+import Articles from "@/components/LandingPage/Articles";
 import Contact from "@/components/LandingPage/Contact";
 import Home from "@/components/LandingPage/Home";
 import Portfolio from "@/components/LandingPage/Portfolio";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Home />
       <Portfolio />
       <About />
+      <Articles />
       <Testimonial />
       <Contact />
     </>

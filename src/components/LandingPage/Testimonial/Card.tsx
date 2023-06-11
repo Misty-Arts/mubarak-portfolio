@@ -18,9 +18,11 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   testimony,
 }) => {
   return (
-    <div className={`max-w-682px p-6 my-12 mx-auto ${styles.testimonial_card}`}>
-      <div className="md:flex justify-between items-center mb-6">
-        <div className="w-15 h-15 mr-6 relative">
+    <div
+      className={`max-w-682px w-full p-6 my-12 mx-auto ${styles.testimonial_card}`}
+    >
+      <div className="md:flex items-center mx-auto mb-6 md:gap-6 w-fit">
+        <div className="w-15 h-15 relative">
           <Image
             src={imageSrc}
             alt="Image of testimonial"

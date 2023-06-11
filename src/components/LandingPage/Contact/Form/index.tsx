@@ -28,6 +28,7 @@ const ContactForm: FC = () => {
               <Field name="message">
                 {(fieldProps: any) => (
                   <textarea
+                    rows={7}
                     {...fieldProps}
                     placeholder="Message"
                     className="h-full form-control"
