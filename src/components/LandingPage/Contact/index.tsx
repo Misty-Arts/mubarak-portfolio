@@ -16,8 +16,9 @@ const Contact: FC = () => {
     <section id="contact" className="custom-container my-16 md:my-32">
       <Heading title="CONTACT" subtitle="Get in Touch" />
       <div className="flex flex-wrap justify-between ">
-        {contactDetails.map((item) => (
+        {contactDetails.map((item, index) => (
           <ContactCard
+            key={`${item.title}-${index}`}
             icon={item.icon}
             title={item.title}
             content={item.content}
